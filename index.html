@@ -1,101 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/main.css" />
-
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
 	<title>About Me</title>
 </head>
-	<body>
 
-			<header id="header" class="alt">
-				<div class="inner">
-					<h1>Hello There!</h1>
-					<p>My Name is Tony Zhang</p>
+<body>
+
+	<header id="header" class="alt">
+		<div class="inner">
+			<h1>Hello There!</h1>
+			<p>My Name is Tony Zhang</p>
+			<a id="scroll" href="#intro"><span class="scroll"></span></a>
+		</div>
+	</header>
+
+	<div id="wrapper">
+
+		<!-- Banner -->
+		<section id="intro" class="main body_section">
+			<h2>About me</h2>
+			<div class="row">
+				<div class="col-sm-8">
+					<p>I'm a second year CS major at Georgia Tech, with a concentration in People and Artificial Intelligence. I have
+						experience in Java, JavaScript, and web development. Some of the things I love include tennis, photography, and
+						exploring the great outdoors.
+					</p>
 				</div>
-			</header>
-
-			<div id="wrapper">
-
-				<!-- Banner -->
-					<section id="intro" class="main">
-						<span class="icon fa-diamond major"></span>
-						<h2>About me</h2>
-						<p>I'm a second year CS major at Georgia Tech, who is currently focusing on user design and artificial intelligence. Some of the things I love include website design, photography, and exploring the great outdoors. Scroll down to learn more about me!
-						</p>
-						<ul class="actions">
-							<li><a href="#" class="button big">Learn More</a></li>
-						</ul>
-					</section>
-
-				<!-- Items -->
-					<section class="main items">
-						<article class="item">
-							<header>
-								<a href="#"><img src="images/pic01.jpg" alt="" /></a>
-								<h3>Feugiat et faucibus</h3>
-							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article class="item">
-							<header>
-								<a href="#"><img src="images/pic02.jpg" alt="" /></a>
-								<h3>Blandit adipiscing</h3>
-							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article class="item">
-							<header>
-								<a href="#"><img src="images/pic03.jpg" alt="" /></a>
-								<h3>Lorem massa nulla</h3>
-							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article class="item">
-							<header>
-								<a href="#"><img src="images/pic04.jpg" alt="" /></a>
-								<h3>Ipsum sed tempus</h3>
-							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-					</section>
-
-				<!-- CTA -->
-					<section id="cta" class="main special">
-						<h2>Etiam veroeros lorem</h2>
-						<p>Phasellus ac augue ac magna auctor tempus proin<br />
-						accumsan lacus a nibh commodo in pellentesque dui<br />
-						in hac habitasse platea dictumst.</p>
-						<ul class="actions">
-							<li><a href="#" class="button big">Get Started</a></li>
-						</ul>
-					</section>
-
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<p class="copyright">&copy; Nobody</p>
-					</footer>
-
+				<div class="col-sm-4">
+					<header>
+						<img src="images/itential_logo.svg" alt="Tony Zhang" class="image" />
+					</header>
+				</div>
 			</div>
-	</body>
+			<ul class="actions">
+				<li>
+					<a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="button big">Learn More</a>
+					<span>&emsp;or&emsp;</span>
+					<a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="button big">Download Resume</a>
+				</li>
+			</ul>
+		</section>
+
+		<section id="work_exp" class="main body_section">
+			<h2>Work Experience</h2>
+			<div class="row">
+				<div class="col-sm-4">
+					<header>
+						<a href="http://www.vpd.net/index.html" target="_blank">
+							<img src="images/velocity_logo.png" alt="" class="image" />
+						</a>
+					</header>
+				</div>
+				<div class="col-sm-8">
+					<h3>Research Intern</h3>
+					<h4>May - June 2016</h4>
+					<p>I performed spreadsheet management and literature searches, and organized research regarding various pharmaceutical products.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<header>
+						<a href="https://www.itential.com/" target="_blank">
+							<img src="images/itential_logo.svg" alt="" class="image" />
+						</a>
+					</header>
+				</div>
+				<div class="col-sm-8">
+					<h3>Software Engineering Intern</h3>
+					<h4>May 2018 - Present</h4>
+					<p>I worked as a Delivery Support intern for the deployment of the company's network automation application. Some of the technologies I gained experience with include Docker, Node.js, and mongoDB.</p>
+				</div>
+			</div>
+			<ul class="actions">
+				<li>
+					<a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="button big">Learn More</a>
+				</li>
+			</ul>
+		</section>
+
+		<section id="skills" class="main body_section">
+			<h2>Skills</h2>
+			<div class="row">
+				<div class="col-sm-12">
+					<h3>Web Design: HTML, CSS, JavaScript (Node.js, Express.js)</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<h3>Backend: Java, AJAX, Docker, mongoDB (?)</h3>
+				</div>
+			</div>
+			<ul class="actions">
+					<li>
+						<a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="button big">Learn More</a>
+					</li>
+				</ul>
+		</section>
+
+		<div id="interests">
+			<h2>Other Interests</h2>
+		</div>
+
+		<!-- Items -->
+		<section class="main items">
+			<article class="item">
+				<header>
+					<a href="#"><img src="images/pic01.jpg" alt="" /></a>
+					<h3>Piano</h3>
+				</header>
+				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est,
+					eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+				<ul class="actions">
+					<li><a href="#" class="button">More</a></li>
+				</ul>
+			</article>
+			<article class="item">
+				<header>
+					<a href="#"><img src="images/pic02.jpg" alt="" /></a>
+					<h3>Tennis</h3>
+				</header>
+				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est,
+					eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+				<ul class="actions">
+					<li><a href="#" class="button">More</a></li>
+				</ul>
+			</article>
+			<article class="item">
+				<header>
+					<a href="#"><img src="images/pic03.jpg" alt="" /></a>
+					<h3>Photography</h3>
+				</header>
+				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est,
+					eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+				<ul class="actions">
+					<li><a href="#" class="button">More</a></li>
+				</ul>
+			</article>
+			<article class="item">
+				<header>
+					<a href="#"><img src="images/pic04.jpg" alt="" /></a>
+					<h3>Ipsum sed tempus</h3>
+				</header>
+				<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est,
+					eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+				<ul class="actions">
+					<li><a href="#" class="button">More</a></li>
+				</ul>
+			</article>
+		</section>
+
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://github.com/tonyz0909/" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+				<li><a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="mailto:azhang305@gatech.edu/" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<p class="copyright">&copy; Nobody</p>
+		</footer>
+
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
 </html>
