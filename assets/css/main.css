@@ -1575,7 +1575,7 @@
 
 /* scroll arrow */
 
-	span.scroll {
+	span.arrow {
 		position: absolute;
 		margin-top: 5em;
 		width: 24px;
