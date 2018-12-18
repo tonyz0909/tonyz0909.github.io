@@ -10,35 +10,59 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
 	<title>About Me</title>
+
+	<style>
+		#wrapper {
+			position: relative;
+			height: initial;
+			overflow-y: scroll;
+		}
+	</style>
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="70">
-
-	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id="navbar">
-		<ul class="nav navbar-nav">
-			<li class="nav-item"><a href="#intro">Section 1</a></li>
-		</ul>
-	</nav>
+<body data-spy="scroll" data-target=".navbar" data-offset="250">
 
 	<header id="header" class="alt">
 		<div class="inner">
-			<h1>Hello There!</h1>
-			<p>My Name is Tony Zhang</p>
+			<h1>Tony Zhang</h1>
+			<p>>Creative Thinker<br>>Avid Coder<br>>Aspiring Photographer</p>
 			<a id="scroll" href="#intro"><span class="arrow"></span></a>
 		</div>
 	</header>
 
-	<div id="wrapper" >
+	<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a class="nav-link" href="#intro">About Me</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#education">Education</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#work_exp">Work Experience</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#interests">Other Interests</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="wrapper">
 
 		<!-- Banner -->
 		<section id="intro" class="main body_section">
 			<h2>About me</h2>
 			<div class="row">
 				<div class="col-sm-8">
-					<p>I'm a second year CS major at Georgia Tech, with a concentration in People and Artificial Intelligence. I have
-						experience in Java, JavaScript, and web development. Some of the things I love include tennis, photography, and
-						exploring the great outdoors.
+					<p>I'm a sophomore at Georgia Tech with a major in Computer Science. As a visual learner, I enjoy the process of
+						creating and designing applications and interfaces, and this website is a result of my interests. I am also
+						fascinated by the seemingly limitless possibilities of artificial intelligence, and am currently taking classes
+						to further my knowledge and experience in automation and machine learning.
 					</p>
 				</div>
 				<div class="col-sm-4">
@@ -56,6 +80,26 @@
 			</ul>
 		</section>
 
+		<section id="education" class="main body_section">
+			<h2>Education</h2>
+			<div class="row">
+				<div class="col-sm-4">
+					<header>
+						<a href="https://www.gatech.edu/" target="_blank">
+							<img src="images/gt_logo.png" alt="" class="image" />
+						</a>
+					</header>
+				</div>
+				<div class="col-sm-8">
+					<h3>Georgia Institute of Technology</h3>
+					<h4>August 2017 - Present</h4>
+					<p>I'm currently a sophomore Computer Science major at Georgia Tech, with a concentration in People and Artificial
+						Intelligence. I am part of the Honors Program, and also actively involved in various clubs and intramural sports
+						outside my classes.</p>
+				</div>
+			</div>
+		</section>
+
 		<section id="work_exp" class="main body_section">
 			<h2>Work Experience</h2>
 			<div class="row">
@@ -69,8 +113,8 @@
 				<div class="col-sm-8">
 					<h3>Research Intern</h3>
 					<h4>May - June 2016</h4>
-					<p>Performed spreadsheet management and literature searches, and organized research regarding various pharmaceutical products.</p>
-					<p>Learned: Microsoft Excel, research and data analytics</p>
+					<p>Performed spreadsheet management and literature searches, and organized research regarding various
+						pharmaceutical products. Gained experience with Microsoft Excel and research and data analytics.
 				</div>
 			</div>
 			<div class="row">
@@ -84,74 +128,79 @@
 				<div class="col-sm-8">
 					<h3>Software Engineering Intern</h3>
 					<h4>May 2018 - Present</h4>
-					<p>Created a Microsoft Azure adapter using Node.js and a web server that hosted real-time data of all private repositories in the company. </p>
-					<p>Learned: Docker, Node.js, mongoDB, Bash</p>
+					<p>Created a Microsoft Azure adapter using Node.js and a web server that hosted real-time data of all private
+						repositories in the company. Gained experience with network automation and programmable networking as well as
+						Docker, Node.js, and mongoDB.</p>
 				</div>
 			</div>
-			<ul class="actions">
-				<li>
-					<a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="button big">Learn More</a>
-				</li>
-			</ul>
 		</section>
 
 		<section id="skills" class="main body_section">
 			<h2>Skills</h2>
+			<p>Hover over each category to learn more!</p>
 			<div class="row">
 				<div class="col-sm-12">
-					<h3>Web Design: HTML, CSS, JavaScript (Node.js, Express.js)</h3>
+					<h3 class="expandable" id="cat1">
+						<a>Web Design:</a>
+						<span id="skills1" class="overlay">HTML, CSS, JavaScript (Node.js, Express.js)</span>
+					</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-12">
-					<h3>Backend: Java, AJAX, Docker, mongoDB (?)</h3>
+					<h3 class="expandable" id="cat2">
+						<a>Backend:</a>
+						<span id="skills2" class="overlay">Java, AJAX, Docker, mongoDB (?)</span>
+					</h3>
 				</div>
 			</div>
-			<ul class="actions">
-					<li>
-						<a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="button big">Learn More</a>
-					</li>
-				</ul>
 		</section>
 
 		<div id="interests">
 			<h2>Other Interests</h2>
+			<p>*Ideally this would be a projects section featuring personal projects</p>
 		</div>
 
 		<!-- Items -->
 		<section class="main items">
 			<article class="item">
 				<header>
-					<a href="#"><img src="images/pic01.jpg" alt="" /></a>
+					<a href="#"><img src="images/piano.jpg" alt="" /></a>
 					<h3>Piano</h3>
 				</header>
-				<p>From classical to pop, I enjoy playing all types of music. I've played piano since I was 5 years old, and was 1st place All-State from 2014-2017.</p>
+				<p>From classical to pop, I enjoy playing all types of music. I've played piano since I was 5 years old, and was
+					1st place All-State from 2014-2017.</p>
 			</article>
 			<article class="item">
 				<header>
-					<a href="#"><img src="images/pic02.jpg" alt="" /></a>
+					<a href="#"><img src="images/tennis.png" alt="" /></a>
 					<h3>Tennis</h3>
 				</header>
-				<p>Game, set, and match! Tennis is one of my favorite hobbies, and my go-to activity after finishing a tough day of classes or after waking up on a bright sunny Saturday morning. I played for my high school's Varsity tennis team.</p>
+				<p>Game, set, and match! Tennis is one of my favorite hobbies, and my go-to activity after finishing a tough day of
+					classes or after waking up on a bright sunny Saturday morning. I played for my high school's Varsity tennis team.</p>
 			</article>
 			<article class="item">
 				<header>
 					<a href="#"><img src="images/pic03.jpg" alt="" /></a>
 					<h3>Photography</h3>
 				</header>
-				<p>As an aspiring photographer, I enjoy all different types of photography; from portrait photography to cityscapes or nature photography, I'm fascinated by how a single landscape or location can be captured by so many different angles and perspectives</p>
+				<p>As an aspiring photographer, I enjoy all different types of photography; from portrait photography to cityscapes
+					or nature photography, I'm fascinated by how a single landscape or location can be captured by so many different
+					angles and perspectives</p>
 			</article>
 			<article class="item">
 				<header>
 					<a href="#"><img src="images/pic04.jpg" alt="" /></a>
 					<h3>Graphics Design (?)</h3>
 				</header>
-				<p>Put some stuff about Bryce (if I still have my Bryce renderings)</p>
+				<p>Graphics design is another hobby I enjoy. I have made many 3D graphics and renderings using Bryce and Lightwave. Check them out <a href="https://www.youtube.com/watch?v=Ct6BUPvE2sM"><u>here!</u></a></p>
 			</article>
 		</section>
 
 		<footer id="footer">
-			<div><h3>Let's stay in touch!</h3></div>
+			<div>
+				<h3>Let's stay in touch!</h3>
+			</div>
 			<ul class="icons">
 				<li><a href="https://github.com/tonyz0909/" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 				<li><a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
