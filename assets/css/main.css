@@ -1387,7 +1387,7 @@
 				border-bottom: solid 2px #ffffff;
 				font-weight: 200;
 				/* font-family: "Pacifico", cursive; */
-				font-family: 'Poppins', sans-serif;
+				font-family: 'Playfair Display', serif;
 				text-transform: none;
 				letter-spacing: 0;
 			}
@@ -1632,3 +1632,7 @@
 .expandable:hover .overlay {
 	width: 100%;
   }
+
+.descriptors {
+	font-size:1em !important;
+}
