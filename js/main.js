@@ -3,7 +3,7 @@ $('#scroll').on('click', function () {
 })
 
 $('#cat1').on('click', function () {
-    $("#skills1").css("width", "100%")
+  $("#skills1").css("width", "100%")
 })
 
 $('#cat2').on('click', function () {
@@ -28,11 +28,17 @@ var navbar = document.getElementById("navbar");
 var wrapper = document.getElementById("wrapper");
 
 window.onload = () => {
-  navbar.style.display = 'none';
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.remove('hidden');
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.add('hidden');
+    navbar.classList.remove("sticky");
+  }
 }
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 // Get the navbar
 
@@ -42,10 +48,10 @@ var sticky = navbar.offsetTop;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.style.display = 'block';
+    navbar.classList.remove('hidden');
     navbar.classList.add("sticky");
   } else {
-    navbar.style.display = 'none';
+    navbar.classList.add('hidden');
     navbar.classList.remove("sticky");
   }
 }
