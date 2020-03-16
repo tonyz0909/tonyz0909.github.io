@@ -5,16 +5,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	 crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	 crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 	<title>About Me</title>
 
 	<style>
@@ -27,6 +29,23 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="250">
 
+	<!-- <button class="openbtn fixed-top" onclick="openNav()">&#9776; Open Sidebar</button> -->
+
+	<!-- <ul class="nav flex-column">
+		<li class="nav-item">
+		  <a class="nav-link active" href="#">Active</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Link</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Link</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		</li>
+	  </ul> -->
+
 	<header id="header" class="alt">
 		<div class="inner">
 			<h1>Tony Zhang</h1>
@@ -35,22 +54,37 @@
 		</div>
 	</header>
 
-	<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-		<ul class="nav nav-pills">
-			<li class="nav-item">
-				<a class="nav-link" href="#intro">About Me</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#education">Education</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#work_exp">Work Experience</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#interests">Other Interests</a>
-			</li>
-		</ul>
+	<nav class="navbar navbar-expand-lg bg-light navbar-light" id="navbar">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="#intro">About Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#education">Education</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#work_exp">Work Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#interests">Other Interests</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
+
+	<!-- <div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+	</div> -->
 
 	<div id="wrapper">
 
@@ -59,9 +93,12 @@
 			<h2>About me</h2>
 			<div>
 				<!-- <div class="col-sm-8"> -->
-				<p>I'm a sophomore Computer Science major at Georgia Tech. As a visual learner, I enjoy the process of creating and
-					designing applications and interfaces, and this website is a result of my interests. I have experience in web
-					design (React and some Angular) and RESTFUL APIs, and I am currently taking classes to further my knowledge in
+				<p>I'm a sophomore Computer Science major at Georgia Tech. As a visual learner, I enjoy the process of
+					creating and
+					designing applications and interfaces, and this website is a result of my interests. I have
+					experience in web
+					design (React and some Angular) and RESTFUL APIs, and I am currently taking classes to further my
+					knowledge in
 					automation and machine learning.
 				</p>
 				<!-- </div>
@@ -73,7 +110,8 @@
 			</div>
 			<ul class="actions">
 				<li>
-					<a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="button big">Learn More</a>
+					<a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="button big">Learn
+						More</a>
 					<span>&emsp;or&emsp;</span>
 					<a href="files/Anthony Zhang Resume.pdf" target="_blank" class="button big">Download Resume</a>
 				</li>
@@ -93,9 +131,11 @@
 				<div class="col-sm-8">
 					<h3>Georgia Institute of Technology</h3>
 					<h4>August 2017 - Present</h4>
-					<p>I am currently a sophomore Computer Science major at Georgia Tech, with a concentration in People and
+					<p>I am currently a sophomore Computer Science major at Georgia Tech, with a concentration in People
+						and
 						Artificial
-						Intelligence. I am part of the Honors Program, and also actively involved in intramural sports and various
+						Intelligence. I am part of the Honors Program, and also actively involved in intramural sports
+						and various
 						computer engineering clubs outside my classes.</p>
 				</div>
 			</div>
@@ -114,8 +154,9 @@
 				<div class="col-sm-8">
 					<h3>Software Engineering Intern</h3>
 					<h4>May - August 2019</h4>
-					<p>At UPS, I worked primarily with Java Spring Boot and Microsoft Azure to create and deploy an API-based email service, improve efficiency of database queries in production, and deploy a 
-					key vault that made UPS customs applications both more efficient and secure.
+					<p>At UPS, I worked primarily with Java Spring Boot and Microsoft Azure to create and deploy an
+						API-based email service, improve efficiency of database queries in production, and deploy a
+						key vault that made UPS customs applications both more efficient and secure.
 					</p>
 				</div>
 			</div>
@@ -131,11 +172,16 @@
 					<h3>Software Engineering Intern</h3>
 					<h4>May 2018 - May 2019</h4>
 					<p>I worked at Itential as a software engineering intern for two semesters.</p>
-					<p>In my first semester, I created a Microsoft Azure adapter using Node.js and RESTFUL APIs and a web application
-						using HTML, Ajax and Bootstrap that hosted real-time data of all private repositories in the company. I gained
-						experience with network automation and programmable networking as well as Docker, Node.js, and mongoDB.</p>
-					<p>In my second semester, I built on my Node.js and web programming skills to help develop two customer-facing
-						applications using React.js and Node.js that automated time-consuming customer tasks and slashed service adapter
+					<p>In my first semester, I created a Microsoft Azure adapter using Node.js and RESTFUL APIs and a
+						web application
+						using HTML, Ajax and Bootstrap that hosted real-time data of all private repositories in the
+						company. I gained
+						experience with network automation and programmable networking as well as Docker, Node.js, and
+						mongoDB.</p>
+					<p>In my second semester, I built on my Node.js and web programming skills to help develop two
+						customer-facing
+						applications using React.js and Node.js that automated time-consuming customer tasks and slashed
+						service adapter
 						integration from a multi-week process to less than a week.</p>
 				</div>
 			</div>
@@ -150,7 +196,8 @@
 				<div class="col-sm-8">
 					<h3>Research Intern</h3>
 					<h4>May - June 2016</h4>
-					<p>Performed spreadsheet management and literature searches, and organized research regarding various
+					<p>Performed spreadsheet management and literature searches, and organized research regarding
+						various
 						pharmaceutical products. Gained experience with Microsoft Excel and research and data analytics.
 				</div>
 			</div>
@@ -188,7 +235,8 @@
 					<a><img src="images/piano.jpg" alt="" /></a>
 					<h3>Piano</h3>
 				</header>
-				<p style="margin-bottom:1em">From classical to pop, I enjoy playing all types of music. I've played piano since I was 5 years old, and have
+				<p style="margin-bottom:1em">From classical to pop, I enjoy playing all types of music. I've played
+					piano since I was 5 years old, and have
 					participated in many competitions.</p>
 				<p style="margin-bottom:0">Notable achievements:</p>
 				<ul style="text-align:left">
@@ -201,9 +249,12 @@
 					<a><img src="images/tennis.png" alt="" /></a>
 					<h3>Tennis</h3>
 				</header>
-				<p>Game, set, and match! Tennis is one of my favorite hobbies, and my go-to activity after finishing a tough day of
-					classes or waking up on a bright and sunny Saturday morning. I started playing tennis at the end of middle school,
-					and have played competitively throughout high school, including doubles on our high school's Varsity team and
+				<p>Game, set, and match! Tennis is one of my favorite hobbies, and my go-to activity after finishing a
+					tough day of
+					classes or waking up on a bright and sunny Saturday morning. I started playing tennis at the end of
+					middle school,
+					and have played competitively throughout high school, including doubles on our high school's Varsity
+					team and
 					singles at USTA ranked tournaments.</p>
 			</article>
 			<article class="item">
@@ -211,16 +262,20 @@
 					<a><img src="images/pic03.jpg" alt="" /></a>
 					<h3>Photography</h3>
 				</header>
-				<p>As an aspiring photographer, I enjoy all different types of photography, from portrait photography to cityscapes
-					and nature photography. I love how photography can capture people and places in ways that words, or even physical
-					experience itself, cannot, and enjoy people's reactions as they light up after I take their photo.</p>
+				<p>As an aspiring photographer, I enjoy all different types of photography, from portrait photography to
+					cityscapes
+					and nature photography. I love how photography can capture people and places in ways that words, or
+					even physical
+					experience itself, cannot, and enjoy people's reactions as they light up after I take their photo.
+				</p>
 			</article>
 			<article class="item">
 				<header>
 					<a><img src="images/graphics.png" class="fit" alt="" /></a>
 					<h3>Graphics Design</h3>
 				</header>
-				<p>Graphics design is another hobby I enjoy. I taught myself graphics design using Bryce 6 and Lightwave, and have
+				<p>Graphics design is another hobby I enjoy. I taught myself graphics design using Bryce 6 and
+					Lightwave, and have
 					created many 3D renderings including 3D object models, landscapes, and animations.</p>
 			</article>
 		</section>
@@ -230,9 +285,12 @@
 				<h3>Let's stay in touch!</h3>
 			</div>
 			<ul class="icons">
-				<li><a href="https://github.com/tonyz0909/" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-				<li><a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="mailto:azhang305@gatech.edu/" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://github.com/tonyz0909/" target="_blank" class="icon fa-github"><span
+							class="label">Github</span></a></li>
+				<li><a href="https://www.linkedin.com/in/tony-z-702b43a8/" target="_blank"
+						class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="mailto:azhang305@gatech.edu/" class="icon fa-envelope"><span class="label">Email</span></a>
+				</li>
 			</ul>
 		</footer>
 
