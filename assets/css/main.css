@@ -1067,6 +1067,7 @@
 			/* text-align:center; */
 			margin-left:3%;
 			margin-right:3%;
+			margin-top:3em;
 		}
 		.about-me > h5 {
 			text-align:justify;
@@ -1076,12 +1077,9 @@
 			margin-left:3%;
 			margin-right:3%;
 		}	
-	}
-
-	@media screen and (max-width: 736px) {
-
+		
 		#header {
-			padding: 3em 2em 2em 2em;
+			padding: 4em 2em 2em 2em;
 		}
 
 			#header.alt h1 {
@@ -1091,10 +1089,6 @@
 			#header.alt {
 				min-height: 0;
 			}
-
-		.about-me {
-			margin-top:3em;
-		}
 	}
 
 	.bounce {
