@@ -1077,17 +1077,14 @@
 			margin-left:3%;
 			margin-right:3%;
 		}	
-		
+
 		#header {
 			padding: 4em 2em 2em 2em;
 		}
 
 			#header.alt h1 {
 				font-size: 3em;
-			}
-
-			#header.alt {
-				min-height: 0;
+				color: blue;
 			}
 	}
 
