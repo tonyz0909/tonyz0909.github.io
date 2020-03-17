@@ -1004,7 +1004,6 @@
 		}
 
 		#header.alt {
-			height: 20em;
 			min-height: 95vh;
 		}
 
@@ -1065,16 +1064,17 @@
 
 	@media (max-width: 991.98px) { 
 		.about-me {
-			text-align:center;
-			margin-left:5%;
-			margin-right:5%;
+			/* text-align:center; */
+			margin-left:3%;
+			margin-right:3%;
 		}
 		.about-me > h5 {
 			text-align:justify;
 		}
 		.col-lg.indented {
-			text-align:center;
-			margin-left:0;
+			/* text-align:center; */
+			margin-left:3%;
+			margin-right:3%;
 		}	
 	}
 
@@ -1125,7 +1125,7 @@
 
 		}
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) {
 
 			#header {
 				padding: 4em 2em 2em 2em;
@@ -1145,7 +1145,7 @@
 					max-width: 20em;
 				}
 
-		}
+		} */
 
 /* Main */
 
