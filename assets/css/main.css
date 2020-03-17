@@ -1078,6 +1078,25 @@
 		}	
 	}
 
+	@media screen and (max-width: 736px) {
+
+		#header {
+			padding: 3em 2em 2em 2em;
+		}
+
+			#header.alt h1 {
+				font-size: 3em;
+			}
+
+			#header.alt {
+				min-height: 0;
+			}
+
+		.about-me {
+			margin-top:3em;
+		}
+	}
+
 	.bounce {
 		-moz-animation: bounce 2s 1;
 		-webkit-animation: bounce 2s 1;
