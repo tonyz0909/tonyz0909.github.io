@@ -9,6 +9,12 @@
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://kit.fontawesome.com/c450b111a0.js" crossorigin="anonymous"></script>
+	<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"
+		rel="stylesheet">
+	<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"
+		rel="stylesheet">
+	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -47,10 +53,26 @@
 	  </ul> -->
 
 	<header id="header" class="alt">
-		<div class="inner">
-			<h1>Tony Zhang</h1>
-			<p class="descriptors">Creative Thinker<br>Avid Learner<br>Aspiring Photographer</p>
-			<!-- <a id="scroll" href="#intro"><span class="arrow"></span></a> -->
+		<div class="row" style="width:100%;">
+			<div class="col-lg indented fade">
+				<h3>Hello! I'm</h3>
+				<h1>Tony Zhang</h1>
+				<h4>Computer Science/Software Engineering</h4>
+				<h4>Georgia Institute of Technology</h4>
+			</div>
+			<div class="col-lg about-me fade">
+				<h2>About me</h2>
+				<h5 style="font-size:1.2em">I'm a sophomore Computer Science major at Georgia Tech. As a visual learner, I enjoy the process of
+					creating and designing applications and interfaces, and this website is a result of my interests. I
+					have experience in web design (React and some Angular) and RESTFUL APIs, and I am currently taking
+					classes to further my knowledge in automation and machine learning.
+				</h5>
+				<a id="scroll" href="#education">
+					<h5 style="margin-top:3em">Learn More</h5>
+					<h5 class="bounce"><i class="fas fa-chevron-down fa-2x" aria-hidden="true"></i></h5>
+				</a>
+			</div>
+			<!-- <p class="descriptors">Creative Thinker<br>Avid Learner<br>Aspiring Photographer</p> -->
 		</div>
 	</header>
 
@@ -61,10 +83,10 @@
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto nav nav-pills">
-				<li class="nav-item">
+			<ul class="navbar-nav mr-auto nav">
+				<!-- <li class="nav-item">
 					<a class="nav-link" href="#intro">About Me</a>
-				</li>
+				</li> -->
 				<li class="nav-item">
 					<a class="nav-link" href="#education">Education</a>
 				</li>
@@ -89,10 +111,9 @@
 	<div id="wrapper">
 
 		<!-- Banner -->
-		<section id="intro" class="main body_section">
+		<!-- <section id="intro" class="main body_section">
 			<h2>About me</h2>
 			<div>
-				<!-- <div class="col-sm-8"> -->
 				<p>I'm a sophomore Computer Science major at Georgia Tech. As a visual learner, I enjoy the process of
 					creating and
 					designing applications and interfaces, and this website is a result of my interests. I have
@@ -101,12 +122,6 @@
 					knowledge in
 					automation and machine learning.
 				</p>
-				<!-- </div>
-				<div class="col-sm-4">
-					<header>
-						<img src="images/profile_pic.png" alt="Tony Zhang" class="image" />
-					</header>
-				</div> -->
 			</div>
 			<ul class="actions">
 				<li>
@@ -116,92 +131,102 @@
 					<a href="files/Anthony Zhang Resume.pdf" target="_blank" class="button big">Download Resume</a>
 				</li>
 			</ul>
-		</section>
+		</section> -->
 
-		<section id="education" class="main body_section">
-			<h2>Education</h2>
-			<div class="row">
-				<div class="col-sm-4">
-					<header>
-						<a href="https://www.gatech.edu/" target="_blank">
-							<img src="images/gt_logo.png" alt="" class="image" />
-						</a>
-					</header>
+		<div class="section-wrapper left">
+			<section id="education" class="main body_section">
+				<h2>Education</h2>
+				<div class="row">
+					<div class="col-sm-4">
+						<header>
+							<a href="https://www.gatech.edu/" target="_blank">
+								<img src="images/gt_logo.png" alt="" class="image" />
+							</a>
+						</header>
+					</div>
+					<div class="col-sm-8">
+						<h3>Georgia Institute of Technology</h3>
+						<h4>August 2017 - Present</h4>
+						<p>I am currently a sophomore Computer Science major at Georgia Tech, with a concentration in
+							People
+							and
+							Artificial
+							Intelligence. I am part of the Honors Program, and also actively involved in intramural
+							sports
+							and various
+							computer engineering clubs outside my classes.</p>
+					</div>
 				</div>
-				<div class="col-sm-8">
-					<h3>Georgia Institute of Technology</h3>
-					<h4>August 2017 - Present</h4>
-					<p>I am currently a sophomore Computer Science major at Georgia Tech, with a concentration in People
-						and
-						Artificial
-						Intelligence. I am part of the Honors Program, and also actively involved in intramural sports
-						and various
-						computer engineering clubs outside my classes.</p>
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 
-		<section id="work_exp" class="main body_section">
-			<h2>Work Experience</h2>
-			<div class="row">
-				<div class="col-sm-4">
-					<header>
-						<a href="https://www.ups.com/us/en/Home.page/" target="_blank">
-							<img src="images/ups_logo.png" alt="" class="image" />
-						</a>
-					</header>
+		<div class="section-wrapper right">
+			<section id="work_exp" class="main body_section">
+				<h2>Work Experience</h2>
+				<div class="row">
+					<div class="col-sm-4">
+						<header>
+							<a href="https://www.ups.com/us/en/Home.page/" target="_blank">
+								<img src="images/ups_logo.png" alt="" class="image" />
+							</a>
+						</header>
+					</div>
+					<div class="col-sm-8">
+						<h3>Software Engineering Intern</h3>
+						<h4>May - August 2019</h4>
+						<p>At UPS, I worked primarily with Java Spring Boot and Microsoft Azure to create and deploy an
+							API-based email service, improve efficiency of database queries in production, and deploy a
+							key vault that made UPS customs applications both more efficient and secure.
+						</p>
+					</div>
 				</div>
-				<div class="col-sm-8">
-					<h3>Software Engineering Intern</h3>
-					<h4>May - August 2019</h4>
-					<p>At UPS, I worked primarily with Java Spring Boot and Microsoft Azure to create and deploy an
-						API-based email service, improve efficiency of database queries in production, and deploy a
-						key vault that made UPS customs applications both more efficient and secure.
-					</p>
+				<div class="row">
+					<div class="col-sm-4">
+						<header>
+							<a href="https://www.itential.com/" target="_blank">
+								<img src="images/itential_logo.svg" alt="" class="image" />
+							</a>
+						</header>
+					</div>
+					<div class="col-sm-8">
+						<h3>Software Engineering Intern</h3>
+						<h4>May 2018 - May 2019</h4>
+						<p>I worked at Itential as a software engineering intern for two semesters.</p>
+						<p>In my first semester, I created a Microsoft Azure adapter using Node.js and RESTFUL APIs and
+							a
+							web application
+							using HTML, Ajax and Bootstrap that hosted real-time data of all private repositories in the
+							company. I gained
+							experience with network automation and programmable networking as well as Docker, Node.js,
+							and
+							mongoDB.</p>
+						<p>In my second semester, I built on my Node.js and web programming skills to help develop two
+							customer-facing
+							applications using React.js and Node.js that automated time-consuming customer tasks and
+							slashed
+							service adapter
+							integration from a multi-week process to less than a week.</p>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<header>
-						<a href="https://www.itential.com/" target="_blank">
-							<img src="images/itential_logo.svg" alt="" class="image" />
-						</a>
-					</header>
+				<div class="row">
+					<div class="col-sm-4">
+						<header>
+							<a href="http://www.vpd.net/index.html" target="_blank">
+								<img src="images/velocity_logo.png" alt="" class="image" />
+							</a>
+						</header>
+					</div>
+					<div class="col-sm-8">
+						<h3>Research Intern</h3>
+						<h4>May - June 2016</h4>
+						<p>Performed spreadsheet management and literature searches, and organized research regarding
+							various
+							pharmaceutical products. Gained experience with Microsoft Excel and research and data
+							analytics.
+					</div>
 				</div>
-				<div class="col-sm-8">
-					<h3>Software Engineering Intern</h3>
-					<h4>May 2018 - May 2019</h4>
-					<p>I worked at Itential as a software engineering intern for two semesters.</p>
-					<p>In my first semester, I created a Microsoft Azure adapter using Node.js and RESTFUL APIs and a
-						web application
-						using HTML, Ajax and Bootstrap that hosted real-time data of all private repositories in the
-						company. I gained
-						experience with network automation and programmable networking as well as Docker, Node.js, and
-						mongoDB.</p>
-					<p>In my second semester, I built on my Node.js and web programming skills to help develop two
-						customer-facing
-						applications using React.js and Node.js that automated time-consuming customer tasks and slashed
-						service adapter
-						integration from a multi-week process to less than a week.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<header>
-						<a href="http://www.vpd.net/index.html" target="_blank">
-							<img src="images/velocity_logo.png" alt="" class="image" />
-						</a>
-					</header>
-				</div>
-				<div class="col-sm-8">
-					<h3>Research Intern</h3>
-					<h4>May - June 2016</h4>
-					<p>Performed spreadsheet management and literature searches, and organized research regarding
-						various
-						pharmaceutical products. Gained experience with Microsoft Excel and research and data analytics.
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 
 		<section id="skills" class="main body_section">
 			<h2>Skills</h2>

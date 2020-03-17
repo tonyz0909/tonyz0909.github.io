@@ -1,5 +1,5 @@
 $('#scroll').on('click', function () {
-  $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top }, 500); //$("#elementtoScrollToID").offset().top
+  $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top-25 }, 500); //$("#elementtoScrollToID").offset().top
 })
 
 $('#cat1').on('click', function () {
