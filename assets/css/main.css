@@ -87,7 +87,8 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+		font-family: 'Raleway', sans-serif;
 		font-size: 17pt;
 		font-weight: 200;
 		line-height: 1.65;
@@ -1029,6 +1030,8 @@
 				font-weight: 200;
 				/* font-family: "Pacifico", cursive; */
 				font-family: 'Playfair Display', serif;
+				/* font-family: 'Open Sans', sans-serif; */
+				/* font-family: 'Montserrat', sans-serif; */
 				text-transform: none;
 				letter-spacing: 0;
 			}
@@ -1067,7 +1070,11 @@
 	}
 
 	.about-me .card-body {
-		padding: 1.75rem;
+		padding: 2rem;
+	}
+
+	.mobile-display {
+		display: none;
 	}
 
 	@media (max-width: 991.98px) { 
@@ -1077,7 +1084,7 @@
 			margin-right:3%;
 			margin-top:3em;
 		}
-		.about-me > h5 {
+		.mobile-display > h5, .card-body > h5 {
 			text-align:justify;
 		}
 		.col-lg.indented {
@@ -1093,6 +1100,14 @@
 			#header.alt h1 {
 				font-size: 3em;
 			}
+		
+		.mobile-display {
+			display: block;
+		}
+
+		.about-me .card.dark {
+			display: none;
+		}
 	}
 
 	@media (min-width: 992px) { 
