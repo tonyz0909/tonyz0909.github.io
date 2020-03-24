@@ -34,4 +34,5 @@ toggleNavbar = () => {
     navbar.classList.remove("sticky");
   }
 }
-
+	
+ScrollReveal().reveal('section, article', { duration: 1250 }, { easing: 'cubic-bezier(.25,.6,.8,1)' });
