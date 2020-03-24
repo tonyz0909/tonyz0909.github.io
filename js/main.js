@@ -35,4 +35,4 @@ toggleNavbar = () => {
   }
 }
 	
-ScrollReveal().reveal('section, article', { duration: 1250 }, { easing: 'cubic-bezier(.25,.6,.8,1)' });
+ScrollReveal().reveal('section, article, .body-header', { duration: 1250 }, { easing: 'cubic-bezier(.25,.6,.8,1)' });
