@@ -874,7 +874,7 @@
 	@media screen and (max-width: 480px) {
 
 		.item {
-			padding: 2em 1em 0.1em 1em;
+			padding: 2em 1em 1em 1em;
 		}
 
 			.item header {
