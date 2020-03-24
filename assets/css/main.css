@@ -1,12 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
 
-/*
-	Epilogue by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -21,22 +15,6 @@
 	html {
 		scroll-behavior: smooth;
 	}
-
-	/* article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block;
-	}
-
-	body {
-		line-height: 1;
-	}
-
-	ol, ul {
-		list-style: none;
-	}
-
-	body {
-		-webkit-text-size-adjust: none;
-	} */
 
 /* Box Model */
 
@@ -358,22 +336,6 @@
 			line-height: 3.75em;
 		}
 
-		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
-		input[type="button"].disabled,
-		input[type="button"]:disabled,
-		button.disabled,
-		button:disabled,
-		.button.disabled,
-		.button:disabled {
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
-			pointer-events: none;
-			opacity: 0.25;
-		}
-
 		@media screen and (max-width: 480px) {
 
 			input[type="submit"],
@@ -546,10 +508,6 @@
 		padding-left: 1em;
 	}
 
-		/* ul li {
-			padding-left: 0.5em;
-		} */
-
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
@@ -579,119 +537,6 @@
 				ul.icons li:last-child {
 					padding-right: 0;
 				}
-
-		ul.actions {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
-		}
-
-			ul.actions li {
-				display: inline-block;
-				padding: 0 1em 0 0;
-				vertical-align: middle;
-			}
-
-				ul.actions li:last-child {
-					padding-right: 0;
-				}
-
-			ul.actions.small li {
-				padding: 0 0.5em 0 0;
-			}
-
-			ul.actions.vertical li {
-				display: block;
-				padding: 1em 0 0 0;
-			}
-
-				ul.actions.vertical li:first-child {
-					padding-top: 0;
-				}
-
-				ul.actions.vertical li > * {
-					margin-bottom: 0;
-				}
-
-			ul.actions.vertical.small li {
-				padding: 0.5em 0 0 0;
-			}
-
-				ul.actions.vertical.small li:first-child {
-					padding-top: 0;
-				}
-
-			ul.actions.fit {
-				display: table;
-				margin-left: -1em;
-				padding: 0;
-				table-layout: fixed;
-				width: calc(100% + 1em);
-			}
-
-				ul.actions.fit li {
-					display: table-cell;
-					padding: 0 0 0 1em;
-				}
-
-					ul.actions.fit li > * {
-						margin-bottom: 0;
-					}
-
-				ul.actions.fit.small {
-					margin-left: -0.5em;
-					width: calc(100% + 0.5em);
-				}
-
-					ul.actions.fit.small li {
-						padding: 0 0 0 0.5em;
-					}
-
-			@media screen and (max-width: 480px) {
-
-				ul.actions {
-					margin: 0 0 2em 0;
-				}
-
-					ul.actions li {
-						padding: 1em 0 0 0;
-						display: block;
-						text-align: center;
-						width: 100%;
-					}
-
-						ul.actions li:first-child {
-							padding-top: 0;
-						}
-
-						ul.actions li > * {
-							width: 100%;
-							margin: 0 !important;
-						}
-
-					ul.actions.small li {
-						padding: 0.5em 0 0 0;
-					}
-
-						ul.actions.small li:first-child {
-							padding-top: 0;
-						}
-
-			}
-
-	dl {
-		margin: 0 0 2em 0;
-	}
-
-		dl dt {
-			display: block;
-			font-weight: 400;
-			margin: 0 0 1em 0;
-		}
-
-		dl dd {
-			margin-left: 2em;
-		}
 
 	ul.alt li {
 		border-top-color: #666666;
@@ -891,24 +736,9 @@
 		width: 75em;
 		margin: 0 auto;
 		max-width: calc(100% - 4em);
-		/* padding: 4em 0 2em 0; */
+		position: relative;
+		height: initial;
 	}
-
-		/* #wrapper > .main {
-			margin-bottom: 4em;
-		} */
-
-		/* @media screen and (max-width: 980px) {
-
-			#wrapper {
-				padding: 2em 0 2em 0;
-			}
-
-				#wrapper > .main {
-					margin-bottom: 2em;
-				}
-
-		} */
 
 		@media screen and (max-width: 736px) {
 
@@ -916,10 +746,6 @@
 				max-width: calc(100% - 2em);
 				padding: 1em 0 0.1em 0;
 			}
-/* 
-				#wrapper > .main {
-					margin-bottom: 1em;
-				} */
 
 		}
 
@@ -949,7 +775,6 @@
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
-		/* text-align: center; */
 		position: relative;
 		cursor: default;
 	}
@@ -1036,17 +861,11 @@
 				letter-spacing: 0;
 			}
 
-			/* header.alt h3, header.alt h4 {
-				padding: 0 0 0 10%;
-			} */
-
 			#header.alt p {
 				text-transform: uppercase;
 				letter-spacing: 0.325rem;
 				font-weight: 400;
 				font-size: 0.8em;
-				/* text-align: center;
-				padding: 0 1.25em; */
 			}
 
 			#header.alt .inner {
@@ -1079,7 +898,6 @@
 
 	@media (max-width: 991.98px) { 
 		.about-me {
-			/* text-align:center; */
 			margin-left:3%;
 			margin-right:3%;
 			margin-top:3em;
@@ -1088,7 +906,6 @@
 			text-align:justify;
 		}
 		.col-lg.indented {
-			/* text-align:center; */
 			margin-left:3%;
 			margin-right:3%;
 		}	
@@ -1163,28 +980,6 @@
 
 		}
 
-		/* @media screen and (max-width: 736px) {
-
-			#header {
-				padding: 4em 2em 2em 2em;
-			}
-
-				#header.alt h1 {
-					font-size: 2.5em;
-					padding-left: 0;
-					padding-right: 0;
-				}
-
-				#header.alt p {
-					padding: 0;
-				}
-
-				#header.alt .inner {
-					max-width: 20em;
-				}
-
-		} */
-
 /* Main */
 
 	#main {
@@ -1220,11 +1015,6 @@
 		border-radius: 4px;
 		text-align: left;
 	}
-
-/* grid row */
-	/* .row {
-		padding-bottom: 3em;
-	} */
 
 /* Intro */
 
@@ -1290,21 +1080,6 @@
 
 		}
 
-/* scroll arrow */
-
-	/* span.arrow {
-		position: absolute;
-		margin-top: 5em;
-		width: 24px;
-		height: 24px;
-		margin-left: -12px;
-		border-left: 1px solid #fff;
-		border-bottom: 1px solid #fff;
-		-webkit-transform: rotate(-45deg);
-		transform: rotate(-45deg);
-		box-sizing: border-box;
-		} */
-
 	#scroll {
 		float: center;
 		display: inline-block;
@@ -1335,11 +1110,8 @@
 }
 
 .nav-link.active {
-	/* background-color: #17a2b8 !important;
-	color: #ffffff !important; */
 	font-weight: 400;
 	color: #17a2b8 !important;
-	/* border-bottom: 2px solid #2fbad0; */
 }
 
 .overlay {
@@ -1361,74 +1133,6 @@
 .descriptors {
 	font-size:1em !important;
 }
-
-/** sidebar **/
-/* The sidebar menu */
-.sidebar {
-	height: 100%; /* 100% Full-height */
-	width: 0; /* 0 width - change this with JavaScript */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Stay on top */
-	top: 0;
-	left: 0;
-	background-color: #111; /* Black*/
-	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 60px; /* Place content 60px from the top */
-	transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  /* The sidebar links */
-  .sidebar a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 25px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
-	color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbtn {
-	font-size: 20px;
-	cursor: pointer;
-	background-color: #111;
-	color: white;
-	padding: 10px 15px;
-	border: none;
-  }
-  
-  .openbtn:hover {
-	background-color: #444;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-	transition: margin-left .5s; /* If you want a transition effect */
-	padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-	.sidebar {padding-top: 15px;}
-	.sidebar a {font-size: 18px;}
-  }
-
-
-
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -1455,12 +1159,6 @@
 	padding-top: 2em;
 	margin-bottom: 0.5em;
 }
-
-/* @media screen and (max-width: 980px) {
-	.body-header {
-		padding-top: 1em;
-	}
-} */
 
 /* vertically center-align images */
 .row > .col-sm-4 {
