@@ -1157,3 +1157,30 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.grow {
+	height: 0px;
+	transition: all .2s ease-in;
+	overflow: hidden;
+}
+
+article:hover > .grow {
+	height: 100%;
+	/* transition: all .8s ease; */
+}
+
+article.project {
+	height: 100%;
+}
+
+
+header .navbar.navbar-expand-lg.navbar-dark {
+	position: absolute;
+    top: 4vh;
+	right: 1em;
+	text-transform: uppercase;
+}
+
+.navbar.navbar-expand-lg.navbar-dark li {
+	margin-left: 1em;
+}
